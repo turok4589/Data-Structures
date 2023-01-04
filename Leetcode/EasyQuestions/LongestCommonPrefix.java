@@ -10,7 +10,7 @@ public class LongestCommonPrefix {
        for(int i = 1; i < a.length; i++){ //Start from the first string and chop off a character each time.
              //start from the second string
              while(a[i].indexOf(firstString) != 0){ //basically index off returns the first occurence so. If you're saying flower into flow then it'll chop off until you reach 0.
-                //if there is no substring then it'll equal -1 and firstString will be chopped off completely.
+                //if there is no substring then it'll equal -1 and firstString will be chopped off until it reaches 0 or is completely chopped off as "" = 0.
                 firstString = firstString.substring(0, firstString.length() - 1);
              }
        }

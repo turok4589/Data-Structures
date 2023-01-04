@@ -1,0 +1,11 @@
+When to use an array:
+
+Pros:
+1. Fast Lookup
+2. Fast Push/Pop
+3. Ordered
+
+Cons:
+1. Slow Inserts - Need to shift elements when it's not at the end of our array
+2. Slow Deletes
+3. Fixed Size

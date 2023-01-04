@@ -4,7 +4,7 @@ public class removeduplicates {
     public int removeDuplicates(int[] nums) {
         //Sorted Array remove duplicates
         //Signals Using Pointers
-        int high = 1;;
+        int high = 1; //start at one because the first index is obviously going to be unique
         for(int i = 0; i < nums.length -1; i++){
             if(nums[i] != nums[i+1]){
                 //now we need to swap some values
@@ -19,6 +19,7 @@ public class removeduplicates {
      //Tricky question as I didn't realize what the high pointer really did
      //High keeps track of the current index we are placing the next unique number.
     //Once we find something unique, we swap the two values.
+    //because this is a sorted array all of our duplicates are going to be next to each other.
 
 }
 
